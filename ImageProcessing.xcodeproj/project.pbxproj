@@ -11,6 +11,9 @@
 		F3BFB88D2B2B4690005A6878 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BFB88C2B2B4690005A6878 /* ContentView.swift */; };
 		F3BFB88F2B2B4691005A6878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3BFB88E2B2B4691005A6878 /* Assets.xcassets */; };
 		F3BFB8922B2B4691005A6878 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3BFB8912B2B4691005A6878 /* Preview Assets.xcassets */; };
+		F3BFB89F2B307632005A6878 /* customColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BFB89E2B307632005A6878 /* customColorPicker.swift */; };
+		F3BFB8A12B324A2C005A6878 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BFB8A02B324A2C005A6878 /* ImagePickerView.swift */; };
+		F3BFB8A52B324A67005A6878 /* ImageProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BFB8A42B324A67005A6878 /* ImageProcessing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,10 @@
 		F3BFB88C2B2B4690005A6878 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F3BFB88E2B2B4691005A6878 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3BFB8912B2B4691005A6878 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F3BFB89E2B307632005A6878 /* customColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customColorPicker.swift; sourceTree = "<group>"; };
+		F3BFB8A02B324A2C005A6878 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		F3BFB8A42B324A67005A6878 /* ImageProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessing.swift; sourceTree = "<group>"; };
+		F3BFB8AC2B333D37005A6878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +58,12 @@
 		F3BFB8892B2B4690005A6878 /* ImageProcessing */ = {
 			isa = PBXGroup;
 			children = (
+				F3BFB8AC2B333D37005A6878 /* Info.plist */,
 				F3BFB88A2B2B4690005A6878 /* ImageProcessingApp.swift */,
 				F3BFB88C2B2B4690005A6878 /* ContentView.swift */,
+				F3BFB8A02B324A2C005A6878 /* ImagePickerView.swift */,
+				F3BFB8A42B324A67005A6878 /* ImageProcessing.swift */,
+				F3BFB89E2B307632005A6878 /* customColorPicker.swift */,
 				F3BFB88E2B2B4691005A6878 /* Assets.xcassets */,
 				F3BFB8902B2B4691005A6878 /* Preview Content */,
 			);
@@ -139,6 +150,9 @@
 			files = (
 				F3BFB88D2B2B4690005A6878 /* ContentView.swift in Sources */,
 				F3BFB88B2B2B4690005A6878 /* ImageProcessingApp.swift in Sources */,
+				F3BFB89F2B307632005A6878 /* customColorPicker.swift in Sources */,
+				F3BFB8A52B324A67005A6878 /* ImageProcessing.swift in Sources */,
+				F3BFB8A12B324A2C005A6878 /* ImagePickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,8 +286,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ImageProcessing/Preview Content\"";
+				DEVELOPMENT_TEAM = 557855FSBN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImageProcessing/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"This app requires camera access to take photos.\"";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"This app requires access to your photo gallery to select photos\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -300,8 +318,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ImageProcessing/Preview Content\"";
+				DEVELOPMENT_TEAM = 557855FSBN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ImageProcessing/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"This app requires camera access to take photos.\"";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"This app requires access to your photo gallery to select photos\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
