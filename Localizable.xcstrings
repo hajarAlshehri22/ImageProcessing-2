@@ -1,5 +1,20 @@
 {
   "sourceLanguage" : "en",
-  "strings" : {},
+  "strings" : {
+    "Key" : {
+      "extractionState" : "manual"
+    },
+    "Start saving your moments by uploading / taking a picture" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابدأ في حفظ لحظاتك عن طريق رفع / التقاط صورة"
+          }
+        }
+      }
+    }
+  },
   "version" : "1.0"
 }
