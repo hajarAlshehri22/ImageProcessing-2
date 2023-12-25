@@ -1,6 +1,6 @@
 import SwiftUI
 
-    struct ContentView: View {
+struct ContentView: View {
         @State private var image: UIImage? = nil
         @State private var showImagePicker = false
         @State private var showConvertedView = false
@@ -14,89 +14,83 @@ import SwiftUI
         @State private var selectedColors: [Color] = [] // Add this line to store selected colors
 
         var body: some View {
-            NavigationView {
-                VStack {
-               // This view will handle displaying the placeholder or the selected image
-           ImagePlaceholder(image: image)
-              .onTapGesture {
-                showingActionSheet = true
-                                 }
-                    // Display selected colors under the image
-                                    HStack {
-                                        ForEach(selectedColors, id: \.self) { color in
-                                            Rectangle()
-                                                .fill(color)
-                                                .frame(width: 30, height: 30)
-                                        }
-                                    }
-                    
-                             if let uiImage = image, let imageData = uiImage.jpegData(compressionQuality: 1.0) {
-                                 if !showColorPicker {
-                                     // Only show the "Pick Color" button if the color picker is not already shown
-                                     Button("Pick Color") {
-                                         self.imageData = imageData
-                                         showColorPicker = true
-                                     }
-                                     .padding()
+           NavigationView {
+               VStack {
+                   ImagePlaceholder(image: image)
+                       .onTapGesture {
+                           showingActionSheet = true
+                       }
 
-                                     // Display Convert Button conditionally
-                                     // Modify ConvertButton to pass selected colors
-                                                     ConvertButton {
-                                                         isProcessing = true
-                                                         convertImage(image: uiImage, colors: selectedColors)
-                                                     }
-                                 } else {
-                                     Helper(showPicker: $showColorPicker, color: $pickedColor) { selectedColor in
-                                         self.selectedColors.append(selectedColor)
-                                     }
-                                     .frame(height: 150)  // Set the height you want for the color picker
-                                   .padding()
-                                 }
-                             }
+                   HStack {
+                       ForEach(selectedColors, id: \.self) { color in
+                           Rectangle()
+                               .fill(color)
+                               .frame(width: 30, height: 30)
+                       }
+                   }
 
-                             Spacer()
-                }
-                .navigationBarTitle("")
-                .navigationBarItems(leading: EmptyView(), trailing: LogoImageView()) // Set your custom logo image view as the trailing navigation bar item
-                .actionSheet(isPresented: $showingActionSheet) {
-                    ActionSheet(title: Text("Select Image"), buttons: [
-                        .default(Text("Camera")) {
-                            if UIImagePickerController.isSourceTypeAvailable(.camera) {
-                                sourceType = .camera
-                                showImagePicker = true
-                            }
-                        },
-                        .default(Text("Photo Gallery")) {
-                            sourceType = .photoLibrary
-                            showImagePicker = true
-                        },
-                        .cancel()
-                    ])
-                }
-                .sheet(isPresented: $showImagePicker) {
-                    ImagePickerView(image: $image, sourceType: sourceType)
-                }
-                .sheet(isPresented: $showConvertedView) {
-                    if let convertedImage = convertedImage {
-                        ConvertedImageView(image: convertedImage, selectedColors: selectedColors) // Pass the selectedColors here
-                    }
-                }
-            }
-        }
+                   if let uiImage = image, let _ = uiImage.jpegData(compressionQuality: 1.0) {
+                       Button("Pick Color") {
+                           self.imageData = imageData
+                           showColorPicker = true
+                       }
+                       .padding()
 
-        func convertImage(image: UIImage, colors: [Color]) {
-                // Modify this function to use selected colors
-                DispatchQueue.global(qos: .userInitiated).async {
-                    let processedImage = ImageProcessing.convertImageToOutline(image, withColors: colors)
-                    DispatchQueue.main.async {
-                        convertedImage = processedImage
-                        showConvertedView = true
-                        isProcessing = false
-                    }
-                }
-            }
-    
-}
+                       ConvertButton {
+                           isProcessing = true
+                           convertImage(image: uiImage, colors: selectedColors)
+                       }
+                   }
+
+                   if showColorPicker {
+                       Helper(showPicker: $showColorPicker, color: $pickedColor) { selectedColor in
+                           self.selectedColors.append(selectedColor)
+                       }
+                       .frame(height: 150)
+                       .padding()
+                   }
+
+                   Spacer()
+               }
+               .navigationBarTitle("")
+               .navigationBarItems(leading: EmptyView(), trailing: LogoImageView())
+               .actionSheet(isPresented: $showingActionSheet) {
+                   ActionSheet(title: Text("Select Image"), buttons: [
+                       .default(Text("Camera")) {
+                           if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                               sourceType = .camera
+                               showImagePicker = true
+                           }
+                       },
+                       .default(Text("Photo Gallery")) {
+                           sourceType = .photoLibrary
+                           showImagePicker = true
+                       },
+                       .cancel()
+                   ])
+               }
+               .sheet(isPresented: $showImagePicker) {
+                   ImagePickerView(image: $image, sourceType: sourceType)
+               }
+               .sheet(isPresented: $showConvertedView) {
+                   if let convertedImage = convertedImage {
+                       ConvertedImageView(image: convertedImage, selectedColors: selectedColors)
+                   }
+               }
+           }
+       }
+
+       func convertImage(image: UIImage, colors: [Color]) {
+           DispatchQueue.global(qos: .userInitiated).async {
+               let processedImage = ImageProcessing.convertImageToOutline(image, withColors: colors)
+               DispatchQueue.main.async {
+                   convertedImage = processedImage
+                   showConvertedView = true
+                   isProcessing = false
+               }
+           }
+       }
+   }
 struct LogoImageView: View {
     var body: some View {
         Image("Logo")
