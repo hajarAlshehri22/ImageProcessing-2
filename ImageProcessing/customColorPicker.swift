@@ -54,7 +54,7 @@ struct Helper: View {
                        }
                        .padding()
         }
-        .navigationBarTitle("Image Color Picker")
+        .navigationBarTitle("Color Picker")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             Button("Close") {
