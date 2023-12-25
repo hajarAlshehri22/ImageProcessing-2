@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC946E3A2B384DC60096A2EE /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC946E392B384DC60096A2EE /* SwiftUIView.swift */; };
+		EC946E3C2B385BB40096A2EE /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = EC946E3B2B385BB40096A2EE /* Localizable.xcstrings */; };
 		F3BFB88B2B2B4690005A6878 /* ImageProcessingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BFB88A2B2B4690005A6878 /* ImageProcessingApp.swift */; };
 		F3BFB88D2B2B4690005A6878 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BFB88C2B2B4690005A6878 /* ContentView.swift */; };
 		F3BFB88F2B2B4691005A6878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3BFB88E2B2B4691005A6878 /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC946E392B384DC60096A2EE /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		EC946E3B2B385BB40096A2EE /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F3BFB8872B2B4690005A6878 /* ImageProcessing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageProcessing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3BFB88A2B2B4690005A6878 /* ImageProcessingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessingApp.swift; sourceTree = "<group>"; };
 		F3BFB88C2B2B4690005A6878 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +46,8 @@
 		F3BFB87E2B2B4690005A6878 = {
 			isa = PBXGroup;
 			children = (
+				EC946E3B2B385BB40096A2EE /* Localizable.xcstrings */,
+				EC946E392B384DC60096A2EE /* SwiftUIView.swift */,
 				F3BFB8892B2B4690005A6878 /* ImageProcessing */,
 				F3BFB8882B2B4690005A6878 /* Products */,
 			);
@@ -120,6 +126,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = F3BFB87E2B2B4690005A6878;
 			productRefGroup = F3BFB8882B2B4690005A6878 /* Products */;
@@ -138,6 +145,7 @@
 			files = (
 				F3BFB8922B2B4691005A6878 /* Preview Assets.xcassets in Resources */,
 				F3BFB88F2B2B4691005A6878 /* Assets.xcassets in Resources */,
+				EC946E3C2B385BB40096A2EE /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +158,7 @@
 			files = (
 				F3BFB88D2B2B4690005A6878 /* ContentView.swift in Sources */,
 				F3BFB88B2B2B4690005A6878 /* ImageProcessingApp.swift in Sources */,
+				EC946E3A2B384DC60096A2EE /* SwiftUIView.swift in Sources */,
 				F3BFB89F2B307632005A6878 /* customColorPicker.swift in Sources */,
 				F3BFB8A52B324A67005A6878 /* ImageProcessing.swift in Sources */,
 				F3BFB8A12B324A2C005A6878 /* ImagePickerView.swift in Sources */,
@@ -286,7 +295,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ImageProcessing/Preview Content\"";
-				DEVELOPMENT_TEAM = 557855FSBN;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ImageProcessing/Info.plist;
@@ -318,7 +327,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ImageProcessing/Preview Content\"";
-				DEVELOPMENT_TEAM = 557855FSBN;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ImageProcessing/Info.plist;
