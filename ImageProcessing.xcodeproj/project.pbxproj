@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C118F7F2B386F2300B931A7 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C118F7E2B386F2300B931A7 /* SplashScreen.swift */; };
 		F3BFB88B2B2B4690005A6878 /* ImageProcessingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BFB88A2B2B4690005A6878 /* ImageProcessingApp.swift */; };
 		F3BFB88D2B2B4690005A6878 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BFB88C2B2B4690005A6878 /* ContentView.swift */; };
 		F3BFB88F2B2B4691005A6878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3BFB88E2B2B4691005A6878 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C118F7E2B386F2300B931A7 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		F3BFB8872B2B4690005A6878 /* ImageProcessing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageProcessing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3BFB88A2B2B4690005A6878 /* ImageProcessingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessingApp.swift; sourceTree = "<group>"; };
 		F3BFB88C2B2B4690005A6878 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				F3BFB8AC2B333D37005A6878 /* Info.plist */,
 				F3BFB88A2B2B4690005A6878 /* ImageProcessingApp.swift */,
+				7C118F7E2B386F2300B931A7 /* SplashScreen.swift */,
 				F3BFB88C2B2B4690005A6878 /* ContentView.swift */,
 				F3BFB8A02B324A2C005A6878 /* ImagePickerView.swift */,
 				F3BFB8A42B324A67005A6878 /* ImageProcessing.swift */,
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C118F7F2B386F2300B931A7 /* SplashScreen.swift in Sources */,
 				F3BFB88D2B2B4690005A6878 /* ContentView.swift in Sources */,
 				F3BFB88B2B2B4690005A6878 /* ImageProcessingApp.swift in Sources */,
 				F3BFB89F2B307632005A6878 /* customColorPicker.swift in Sources */,
@@ -286,7 +290,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ImageProcessing/Preview Content\"";
-				DEVELOPMENT_TEAM = 557855FSBN;
+				DEVELOPMENT_TEAM = UVKGS2HRX5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ImageProcessing/Info.plist;
@@ -318,7 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ImageProcessing/Preview Content\"";
-				DEVELOPMENT_TEAM = 557855FSBN;
+				DEVELOPMENT_TEAM = UVKGS2HRX5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ImageProcessing/Info.plist;
