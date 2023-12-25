@@ -1,16 +1,140 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "Key" : {
-      "extractionState" : "manual"
+    "" : {
+
     },
-    "Start saving your moments by uploading / taking a picture" : {
+    "Add Color" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أضف لون"
+          }
+        }
+      }
+    },
+    "Camera" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التقط صورة"
+          }
+        }
+      }
+    },
+    "Close" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إغلاق"
+          }
+        }
+      }
+    },
+    "Convert" : {
       "extractionState" : "manual",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ابدأ في حفظ لحظاتك عن طريق رفع / التقاط صورة"
+            "value" : "حول الصورة"
+          }
+        }
+      }
+    },
+    "Converted Image" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صورتك جاهزه!"
+          }
+        }
+      }
+    },
+    "Image Color Picker" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قارئ اللون"
+          }
+        }
+      }
+    },
+    "Photo Gallery" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "معرض الصور"
+          }
+        }
+      }
+    },
+    "Pick Color" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختر لون"
+          }
+        }
+      }
+    },
+    "Pick Colors from the picture" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختر الألوان من الصورة"
+          }
+        }
+      }
+    },
+    "Select Image" : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أختر صورة"
+          }
+        }
+      }
+    },
+    "Start saving your moments by " : {
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابدأ بحفظ لحضاتك عن طريق"
+          }
+        }
+      }
+    },
+    "Tap to upload" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "انقر لرفع الصور"
+          }
+        }
+      }
+    },
+    "uploading / taking a picture" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عن طريق رفعها"
           }
         }
       }

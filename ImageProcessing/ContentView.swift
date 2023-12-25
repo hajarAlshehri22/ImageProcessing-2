@@ -113,7 +113,7 @@ struct ImagePlaceholder: View {
                 .border(Color.gray, width: 1)
         } else {
             Spacer()
-            Text("Start saving your moments by")
+            Text("Start saving your moments by ")
              .font(.headline)
               .foregroundColor(.gray)
                Text("uploading / taking a picture")
@@ -184,11 +184,12 @@ struct ConvertedImageView: View {
         }
     }
 }
-
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
-
+#Preview{
+    ContentView()
+        .environment(\.locale, .init(identifier: "ar"))
+}
